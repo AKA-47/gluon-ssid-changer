@@ -1,4 +1,4 @@
-ssid-changer
+ssid-changer - 2015.2 Fixed
 ============
 
 Script to change the SSID when there is no suffic sufficient connection to the selected Gateway.
@@ -7,11 +7,15 @@ It is quite basic, it just checks the Quality of the Connection and decides if a
 
 Create a file "modules" with the following content in your site directory:</a>
 
+# Modules
+
 GLUON_SITE_FEEDS="ssidchanger"<br>
 PACKAGES_SSIDCHANGER_REPO=https://github.com/AKA-47/gluon-ssid-changer.git<br>
 PACKAGES_SSIDCHANGER_COMMIT=d419ea632dc55ae371464876cef391aa4eace5f1<br>
 
 With this done you can add the package gluon-ssid-changer to your site.mk
+
+# ite.mk
 
 GLUON_SITE_PACKAGES := \
 ......
@@ -20,7 +24,6 @@ GLUON_SITE_PACKAGES := \
 
 DEFAULT_GLUON_RELEASE := 15.12-v2015.2-exp-AKA47-$(shell date '+%Y%m%d')
 
-# Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
@@ -32,5 +35,3 @@ export GLUON_TARGET
 
 GLUON_LANGS ?= de
 
-
-13.12.2015: Working on some fixes for 2015.2
