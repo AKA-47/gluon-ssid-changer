@@ -14,3 +14,5 @@ PACKAGES_SSIDCHANGER_COMMIT=06bdf6fc6149af9cbb4564aac82cadd56a98a8b2<br>
 With this done you can add the package gluon-ssid-changer to your site.mk
 
 This skript is tested with Gluon 2015.2.1
+
+13.12.2015: Working on some fixes for 2015.2
