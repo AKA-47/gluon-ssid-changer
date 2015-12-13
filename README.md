@@ -15,7 +15,7 @@ PACKAGES_SSIDCHANGER_COMMIT=d419ea632dc55ae371464876cef391aa4eace5f1<br>
 
 With this done you can add the package gluon-ssid-changer to your site.mk
 
-# ite.mk
+# site.mk
 
 GLUON_SITE_PACKAGES := \
 ......
